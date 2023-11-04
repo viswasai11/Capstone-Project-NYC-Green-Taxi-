@@ -6,7 +6,6 @@
 ### Competition Description:
 Ask aIf "Total_amount" is the predicted variable, you can use the other variables in the dataset to make predictions about the total amount charged to passengers for each trip. The specific objectives you can pursue using "Total_amount" as the target variable .<br>
 
-With 17 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.<br>
 
 ### File descriptions
 **train.parquet** - green_tripdata_2023-05.parquet.<br>
@@ -39,7 +38,7 @@ If "Total_amount" is the predicted variable, you can use the other variables in 
 This project is licensed under the GPU License.
 
 ### Acknowledgments
-- The dataset used in this project is sourced from: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
+- The dataset used in this project is sourced from: (https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 - The Gradient Boosting Machine algorithm is implemented using the scikit-learn library.
 
 ### Technology used:
