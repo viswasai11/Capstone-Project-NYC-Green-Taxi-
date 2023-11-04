@@ -1,24 +1,46 @@
 # Project-NYC-Green-Taxi-
-# TLC Trip Record Data
-Yellow and green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. The data used in the attached datasets were collected and provided to the NYC Taxi and Limousine Commission (TLC) by technology providers authorized under the Taxicab & Livery Passenger Enhancement Programs (TPEP/LPEP). The trip data was not created by the TLC, and TLC makes no representations as to the accuracy of these data.
 
-For-Hire Vehicle (“FHV”) trip records include fields capturing the dispatching base license number and the pick-up date, time, and taxi zone location ID (shape file below). These records are generated from the FHV Trip Record submissions made by bases. Note: The TLC publishes base trip record data as submitted by the bases, and we cannot guarantee or confirm their accuracy or completeness. Therefore, this may not represent the total amount of trips dispatched by all TLC-licensed bases. The TLC performs routine reviews of the records and takes enforcement actions when necessary to ensure, to the extent possible, complete and accurate information.
+### The project involves the following key steps:
+**Data Collection: NYC link:** https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
-# Working With Parquet Format
-TLC is switching to the Parquet file type for storing raw trip data on our website.
-Parquet is the industry standard for working with big data. Using Parquet format
-results in reduced file sizes and increased speeds. However, we have been using
-the CSV format for a while and the Parquet format might be new to some users.
-Below are examples of how to open Parquet files using R and Python:
-Python:
-import pyarrow.parquet as pq
-trips = pq.read_table('trips.parquet')
-trips = trips.to_pandas()
-Additional documentation: https://arrow.apache.org/docs/python/parquet.html
-R:
-library(arrow)
-trips <- read_parquet('trips.parquet')
-Additional documentation: https://arrow.apache.org/docs/r/reference/read_parquet.html
+### Competition Description:
+Ask aIf "Total_amount" is the predicted variable, you can use the other variables in the dataset to make predictions about the total amount charged to passengers for each trip. The specific objectives you can pursue using "Total_amount" as the target variable .<br>
+
+With 17 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.<br>
+
+### File descriptions
+**train.parquet** - green_tripdata_2023-05.parquet.<br>
+
+### Comprehensive Data Exploration with Python.
+- Understand how variables are distributed and how they interact
+- Apply different transformations before training machine learning models
+
+### Fare Taxi EDA
+- Learn to use visualization techniques to study missing data and distributions
+- Includes correlation heatmaps, p, and t-SNE to help inform appropriate inputs to a linear model
+
+### A Study on Regression Applied to the Dataset
+- Demonstrate effective tactics for feature engineering
+- Explore linear regression with different regularization methods including ridge, LASSO, and ElasticNet using scikit-learn
+
+### Regularized Linear Models
+- Build a basic linear model
+
+**Data Preprocessing:** Cleaning and preprocessing the dataset to handle missing values, outliers, and inconsistencies. This step also involves transforming categorical variables into numerical representations, normalizing numeric features, and splitting the dataset into training and testing subsets.
+
+**Model Training:** Implementing linear regression using appropriate libraries or frameworks. The training process involves fitting the model to the training data, estimating the coefficients (slope and intercept), and optimizing the model's performance by minimizing the residual errors between the predicted and actual values.
+
+**Model Evaluation:** Assessing the performance of the trained linear regression model using evaluation metrics such as mean squared error (MSE), root mean squared error (RMSE), and R-squared. These metrics provide insights into how well the model predicts the values and indicate its overall accuracy.
+
+### Goal
+If "Total_amount" is the predicted variable, you can use the other variables in the dataset to make predictions about the total amount charged to passengers for each trip. The specific objectives you can pursue using "Total_amount" as the target variable may include. 
+
+### License:
+This project is licensed under the GPU License.
+
+### Acknowledgments
+- The dataset used in this project is sourced from: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
+- The Gradient Boosting Machine algorithm is implemented using the scikit-learn library.
 
 ### Technology used:
 <div align ='left'>
